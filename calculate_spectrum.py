@@ -5,10 +5,13 @@ import numpy as np
 
 laplacian_filter = np.array([[1, 1, 1], [1, -8, 1], [1, 1, 1]])
 
+
 print(f"Laplacianフィルタ: {laplacian_filter}")
 
 result_fft2 = np.fft.fft2(laplacian_filter)
 print(f"周波数スペクトル: {result_fft2}")
+result_fft2_shifted = np.fft.fftshift(result_fft2)
+print(f"周波数スペクトル(シフト): {result_fft2_shifted}")
 
-result_fft2_abs = np.abs(result_fft2)
+result_fft2_abs = np.abs(result_fft2_shifted)
 print(f"周波数振幅スペクトル(絶対値): {result_fft2_abs}")
