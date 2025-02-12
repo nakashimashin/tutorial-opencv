@@ -3,7 +3,7 @@ from VideoDigitalWatermarking import *
 fnin = 'assets/input/my_icon.jpeg'
 fnout = 'assets/output/time_domain_result.jpg'
 
-secret_data = [1,1,1,1,0,0,0,0]
+secret_data = [1,1,1,1,1,0,0,0]
 
 rgb_data = readColorImage(fnin)
 red_data = getRgbLayer(rgb_data, rgb=RED)
