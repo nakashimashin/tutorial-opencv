@@ -1,7 +1,7 @@
 from VideoDigitalWatermarking import *
 
-fn_cover = 'assets/input/my_icon.jpeg'
-fn_stego = 'assets/output/time_domain_result.jpg'
+fn_cover = 'assets/input/my_icon.png'
+fn_stego = 'assets/output/time_domain_result.png'
 
 rgb_cover = readColorImage(fn_cover)
 rgb_stego = readColorImage(fn_stego)

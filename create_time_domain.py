@@ -1,7 +1,7 @@
 from VideoDigitalWatermarking import *
 
-fnin = 'assets/input/my_icon.jpeg'
-fnout = 'assets/output/time_domain_result.jpg'
+fnin = 'assets/input/my_icon.png'
+fnout = 'assets/output/time_domain_result.png'
 
 secret_data = [1,1,1,1,1,0,0,0]
 
